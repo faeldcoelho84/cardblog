@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+:root {
+    --yellow: hsl(47, 88%, 63%);
+    --White: hsl(0, 0%, 100%);
+    --Grey: hsl(0, 0%, 50%);
+    --Black: hsl(0, 0%, 7%);
+}
+
+body {
+    background-color: var(--yellow);
+    min-height: 100vh;
+    display: grid;
+    place-content: center;
+    font-family: 'Figtree';
+}
+/* ===== CONFIGURAÇÃO CARD WHITE ========= */
+.conteiner {
+    background-color: var(--White);
+    max-width: 400px;
+    padding: 1.5rem;
+    margin: 1rem;
+    position: relative;
+    border-radius: 0.7rem;
+    border: 1px solid;
+}
+/* ==== SOMBRA DO CARD ====== */
+.conteiner::before {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-color: var(--Black);
+    position: absolute;
+    top: 15px;
+    right: -15px;
+    border-radius: 0.7rem;
+    z-index: -1;
+}
+/* ======= BANNER ======= */
+.conteiner .banner img {
+    border-radius: 0.7rem;
+    display: block;
+    width: 100%;
+    margin-bottom: 1.5rem;
+}
+/* ======= INTRODUÇÃO ========= */
+.conteiner header .intro {
+    background-color: var(--yellow);
+    width: min-content;
+    padding: 0.5rem;
+    border-radius: 0.3rem;
+    font-weight: 800;
+    margin-bottom: 1.5rem;
+}
+
+.conteiner header .data {
+    margin-bottom: 1.5rem;
+    color: var(--Grey);
+
+}
+
+.conteiner header h1 {
+    margin: 1rem 0;
+}
+
+.conteiner header h1 a{
+    color: var(--Black);
+    font-size: 1.5rem;
+    font-weight: 800;
+    line-height: 1;
+    text-decoration: none;
+}
+
+.conteiner header h1 a:hover {
+    color: var(--yellow);
+}
+
+.conteiner header .descricao {
+    margin-bottom: 1.5rem;
+    color: var(--Grey);
+    line-height: 1.5;
+}
+
+.conteiner footer {
+    display: flex;
+    align-items: center;
+}
+
+.conteiner footer .autor {
+    display: flex;
+}
+
+.conteiner footer img {
+    width: 40px;
+    border-radius: 50%;
+
+}
+
+.conteiner footer .nome {
+    font-weight: 800;
+    margin-left: 15px;
+}
+
+
+
